@@ -40,7 +40,6 @@ async def stats(ctx, membre: discord.Member):
         f"🎮 Skill : {skill}%\n"
         f"😤 Seum : {seum}%\n"
         f"💀 Nul : {nul}%\n"
-        f"Total : 100%"
     )
 
 bot.run(os.environ["DISCORD_TOKEN"])
