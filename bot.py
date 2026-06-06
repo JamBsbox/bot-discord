@@ -30,16 +30,17 @@ async def pile_ou_face(ctx):
 
 @bot.command()
 async def stats(ctx, membre: discord.Member):
-    précision = random.randint(0, 100)
-    vitesse = random.randint(0, 100)
-    skill = random.randint(0, 100)
-    chance = random.randint(0, 100)
+    rage = random.randint(0, 100)
+    skill = random.randint(0, 100 - rage)
+    seum = random.randint(0, 100 - rage - skill)
+    nul = 100 - rage - skill - seum
     await ctx.send(
         f"📊 **Stats de {membre.display_name}** :\n"
-        f"🎯 Précision : {précision}%\n"
-        f"⚡ Vitesse : {vitesse}%\n"
+        f"😡 Rage : {rage}%\n"
         f"🎮 Skill : {skill}%\n"
-        f"🍀 Chance : {chance}%"
+        f"😤 Seum : {seum}%\n"
+        f"💀 Nul : {nul}%\n"
+        f"Total : 100%"
     )
 
 bot.run(os.environ["DISCORD_TOKEN"])
