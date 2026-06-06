@@ -18,4 +18,4 @@ async def bonjour(ctx):
 async def ping(ctx):
     await ctx.send("Pong ! 🏓")
 
-bot.run(os.environ["MTUxMDM1NDYyMjQzNzY1NDc1MA.G7MelN.FbShvwItypT9wHqmiwOIGfPA182YaBelDIHGlM"])
+bot.run(os.environ["DISCORD_TOKEN"])
